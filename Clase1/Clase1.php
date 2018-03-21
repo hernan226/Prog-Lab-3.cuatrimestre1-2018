@@ -15,10 +15,10 @@ echo "<br/>";
 $arr1= array(1,5,3,4,77,5,1);
 var_dump($arr1);
 echo "<br/>";
+
 $arr2[]=1;
 $arr2[]=3;
 $arr2[]=5;
-
 var_dump($arr2);
 
 echo "<br/>";
