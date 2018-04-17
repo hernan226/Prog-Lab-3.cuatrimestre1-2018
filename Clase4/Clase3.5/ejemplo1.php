@@ -1,11 +1,10 @@
 <?php
  require "Entidades.php";
+ $gente=new Persona($_POST['Nombre'],$_POST['Apellido'],$_POST['Edad'],$_POST['Legajo']);
 
 switch($_POST['Submit'])
 {
     case "Cargar":
-        $gente=new Persona($_POST['Nombre'],$_POST['Apellido'],$_POST['Edad'],$_POST['Legajo']);
-
         $ar=fopen("archivo.txt","a");
         fwrite($ar,$gente.'-'."Foto.jpg".PHP_EOL);
         fclose($ar);
@@ -23,7 +22,7 @@ switch($_POST['Submit'])
         {
             if(strcmp($aux[$i],$gente.'-'."Foto.jpg"))
             {        
-                copy("Imagenes/".$_POST['Legajo']."Foto.jpg","Backup/".$_POST['Legajo']."Foto.jpg");
+                copy("Imagenes/".$_POST['Legajo']."Foto.jpg", "Backup/".$_POST['Legajo']."Foto.jpg");
                 break;
             }
         }
@@ -40,7 +39,7 @@ switch($_POST['Submit'])
             $aux[]=fgets($ar);
         }
         fclose($ar);
-        <?html
+        
         break;
         
     case "Borrar":
