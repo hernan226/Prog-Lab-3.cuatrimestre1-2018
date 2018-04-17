@@ -18,9 +18,9 @@
     </br>
     <input type="file" name="Archivo" value="Archivo">
     </br>
-    <input type="submit" name="Cargar"  value="Cargar">
-    <input type="submit" name="Modificar"  value="Modificar">
-    <input type="submit" name="Borrar"  value="Borrar">
+    <input type="submit" name="Submit"  value="Cargar">
+    <input type="submit" name="Submit"  value="Modificar">
+    <input type="submit" name="Submit"  value="Borrar">
     </form>    
     
 </body>
