@@ -32,17 +32,35 @@ switch($_POST['Submit'])
         break;
 
     case "Modificar":
-        $nombre=$_POST['Nombre'];
-        $apelido=$_POST['Apellido'];
+        $aux= array();
         
-        echo $nombre.$apelido;
+        $ar=fopen("archivo.txt","r");
+        while(!feof($ar))
+        {
+            $aux[]=fgets($ar);
+        }
+        fclose($ar);
+        <?html
         break;
         
     case "Borrar":
-        $nombre=$_POST['Nombre'];
-        $apelido=$_POST['Apellido'];
+        $aux= array();
         
-        echo $nombre.$apelido;
+        $ar=fopen("archivo.txt","r");
+        while(!feof($ar))
+        {
+            $aux[]=fgets($ar);
+        }
+        fclose($ar);
+        $ar=fopen("archivo.txt","w");
+        for($i=0;$i<count($aux);$i++)
+        {
+            if(!strcmp($aux[$i],$gente.'-'."Foto.jpg"))
+            {        
+                fwrite($aux[$i].PHP_EOL);
+            }
+        }
+        fclose($ar);
         break;
 }
 
