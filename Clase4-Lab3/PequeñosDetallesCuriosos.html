@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+
+        var numero = "2";
+        var numerodos = 2;
+        if (numero === numerodos) {
+            /*esto da falso porque el operador === evalua dato y tipo a
+             diferencia que el == evalua el contenido y daria verdadero*/
+        }
+
+
+        // dentro de una variable en javaScript se pueden guaradar funciones
+
+        var callback = function HacerAlgo() {
+            console.log("hola mundo");
+        }
+
+        function otraFuncion(num) {
+            console.log(num);
+            callback();
+        }
+
+        console.log(otraFuncion());
+
+
+        //una funcion puede recibir como parametro otra funcion
+        function sumar(num1, num2, llamada) {
+            llamada(num1 + num2);
+        }
+
+        sumar(4, 7, otraFuncion);
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
