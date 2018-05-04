@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Estilos/Styles.css">
     <title>Clase4</title>
     <script>
         var httprequest = new XMLHttpRequest();
@@ -22,25 +23,49 @@
         }
 
         var url = 'http://localhost:3000/loginUsuario';
-
         httprequest.onreadystatechange = callBack;
         httprequest.open('POST', url, true);
         httprequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        httprequest.send('usr=usuario&pass=1234');
+        httprequest.send("usr=" + document.getElementById('usr').value + "&pass="
+            + document.getElementById('pass').value);
 
 
     </script>
 </head>
 
 <body>
-    <form action="" method="GET" enctype="multipart/form-data">
-        Usuario:
-        <input type="text" name="usr" value="usuario">
-        </br>
-        Contraseña:
-        <input type="text" name="pass" value="1234">
-        </br>
-        <input type="submit" value='ok'>
+    <form action="" method="POST">
+        <div class="container">
+            <img class="img" src="http://www.coordinadora.com/wp-content/uploads/sidebar_usuario-corporativo.png">
+
+            </br>
+            </br>
+
+            <div class="section">
+                <label class="lblcentrar">Usuario:</label>
+                </br>
+                <input class="txtboxcentrar" type="text" name="usr">
+
+            </div>
+
+            </br>
+            </br>
+
+            <div class="section">
+                <label class="lblcentrar">Contraseña:</label>
+                </br>
+                <input class="txtboxcentrar" type="password" name="pass">
+
+            </div>
+
+            </br>
+            </br>
+
+            <div class="btncentrar">
+                <input class="btncentrar" type="submit" value='ok'>
+            </div>
+
+        </div>
     </form>
 </body>
 
