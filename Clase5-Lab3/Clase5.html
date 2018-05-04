@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Estilos/Styles.css">
+    <title>Clase4</title>
+    <script>
+        var httprequest = new XMLHttpRequest();
+
+        var callBack = function () {
+            console.log('Llego info. del servidor ' + httprequest.readyState);
+            if (httprequest.readyState == 4) {
+                if (httprequest.status == 200) {
+                    console.log(httprequest.responseText);
+                }
+
+                else
+                    alert('ocurrio un error en el server.');
+            }
+        }
+
+        var url = 'http://localhost:3000/loginUsuario';
+
+        var jsonobj = {"nombre":document.getElementById('nombre').value,
+        "apellido":document.getElementById('apellido').value,
+        "telefono":document.getElementById('telefono').value,
+        "date":document.getElementById('date').value,};
+
+        httprequest.onreadystatechange = callBack;
+        httprequest.open('POST', url, true);
+        httprequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        httprequest.send(jsonobj);
+
+
+    </script>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <div class="container">
+
+            <div class="section">
+                <label class="lblcentrar">Nombre:</label>
+                </br>
+                <input class="txtboxcentrar" type="text" name="nombre">
+
+            </div>
+
+            </br>
+            </br>
+
+            <div class="section">
+                <label class="lblcentrar">Apellido:</label>
+                </br>
+                <input class="txtboxcentrar" type="text" name="apellido">
+
+            </div>
+
+            </br>
+            </br>
+
+            <div class="section">
+                <label class="lblcentrar">Telefono:</label>
+                </br>
+                <input class="txtboxcentrar" type="text" name="telefono">
+
+            </div>
+
+            </br>
+            </br>
+
+            <div class="section">
+                <label class="lblcentrar">Fecha:</label>
+                </br>
+                <input class="txtboxcentrar" type="date" name="date">
+
+            </div>
+
+            </br>
+            </br>
+
+            <div class="btncentrar">
+                <input class="btncentrar" type="submit" value='ok'>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
