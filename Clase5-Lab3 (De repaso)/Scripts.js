@@ -8,9 +8,11 @@ function OnClickSend(email, pass) {
         if (httprequest.readyState == 4) {
             if (httprequest.status == 200) {
                 if (httprequest.response.autenticado === 'si') {
-                    localStorage.setItem(usuario, httprequest.response);
-                }
+                    localStorage.setItem(usuario, httprequest.response);                
                 location.replace("http://localhost:8080/asd/Index.html");
+				}
+				else
+					alert("SOS UN PELOTUDO");
             }
 
             else
