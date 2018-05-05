@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Log me in</title>
+
+    <script src="Scripts.js"></script>
+</head>
+
+<body>
+    <form method="POST">
+    <div  class="container">
+        <img class="img" src="http://www.coordinadora.com/wp-content/uploads/sidebar_usuario-corporativo.png">
+
+        </br>
+        </br>
+
+        <div class="section">
+            <label class="lblcentrar">EMail:</label>
+            </br>
+            <input class="txtboxcentrar" type="text" id="email">
+
+        </div>
+
+        </br>
+        </br>
+
+        <div class="section">
+            <label class="lblcentrar">Contraseña:</label>
+            </br>
+            <input class="txtboxcentrar" type="password" id="pass">
+
+        </div>
+
+        </br>
+        </br>
+
+        <div class="btncentrar">
+            <input class="btncentrar" onclick="OnClickSend(email.value,pass.value)" type="button" value='Sing In'>
+        </div>
+
+    </div>
+    </form>
+</body>
+
+</html>

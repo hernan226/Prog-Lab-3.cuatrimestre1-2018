@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    clear: both;
+    vertical-align: -webkit-baseline-middle;
+    margin: 250px;
+    padding: 40px 40px;
+    min-width: 30%;
+    min-height: 30%;
+    max-width: 10%;
+    max-height: 10%;
+    overflow: auto;
+    border: 5px solid rgba(0, 114, 188);
+    background-color: rgba(39, 129, 136, 0.178);
+}
+
+.section {
+    position: relative;
+    border: 5px solid rgba(0, 114, 188);
+}
+
+.img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.lblcentrar {
+    display: block;
+    text-align: center;
+}
+
+.txtboxcentrar {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btncentrar {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
