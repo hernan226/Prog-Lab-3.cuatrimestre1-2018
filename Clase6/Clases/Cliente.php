@@ -18,14 +18,14 @@ class Cliente
         return $this->_Nombre."-".$this->_Correo."-".$this->_Clave;
     }
     
-    public static function GuardarEnArchivo($Cliente)
+    public function GuardarEnArchivo()
     {
             $ar=fopen("./clientes/clientesActuales.txt","a");
-            fwrite($ar, $Cliente.PHP_EOL);
+            fwrite($ar, $this.PHP_EOL);
             fclose($ar);
     }
 
-    public static function ValidarCliente($Cliente)
+    public function ValidarCliente()
     {
         $ar=fopen("./clientes/clientesActuales.txt","r");
         if($ar!=false)
@@ -39,7 +39,7 @@ class Cliente
             
             for($i=0; $i<count($aux); $i++)
             {
-                if( strcmp($aux[$i], $Cliente) )
+                if( strcmp($aux[$i], $this) )
                     return "Cliente Logueado";
             }
         }

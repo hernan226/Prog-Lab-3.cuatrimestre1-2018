@@ -1,6 +1,2 @@
-frutilla.1.50.heladosImagen/frutilla.031025.jpg
-frutilla.1.50.heladosImagen/frutilla.031110.jpg
-frutilla.1.50.heladosImagen/frutilla.031145.jpg
-frutilla.1.50.heladosImagen/frutilla.031256.jpg
-frutilla.1.50.heladosImagen/frutilla.031349.jpg
-frutilla.1.50.heladosImagen/frutilla.031436.jpg
+frutilla,1.50,heladosImagen/frutilla,031025.jpg
+vainilla,30,heladosImagen/vainilla,191910.jpg
