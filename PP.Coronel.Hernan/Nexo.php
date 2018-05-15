@@ -29,16 +29,16 @@ else
                 var_dump(consultarAlumno($_GET['apellido']));
                 break;
             case "inscribirAlumno":
-                inscribirAlumno($_POST['nombre'],$_POST['apellido'],$_POST['correo'],$_POST['materia'],$_POST['codigo']);
+                Materias::Materias::inscribirAlumno($_POST['nombre'],$_POST['apellido'],$_POST['correo'],$_POST['materia'],$_POST['codigo']);
                 break;
             case "inscripciones":
-                Inscripciones();
+                Materias::Inscripciones();
                 break;
             case "inscripcionesDiscriminadas":
-                InscripcionesDisc($_POST['parametro'],$_POST['tipo']);
+                Materias::InscripcionesDisc($_POST['parametro'],$_POST['tipo']);
                 break;
             case "alumnos":
-                alumnos();
+                Materias::alumnos();
                 break;
         }
     }
