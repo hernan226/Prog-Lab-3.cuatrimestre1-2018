@@ -7,7 +7,7 @@ if(isset($_POST))
     switch($_POST['submit'])
     {
         case "cargarAlumno":
-            $alumno = new Alumno($_POST['nombre'],$_POST['apellido'],$_POST['correo'],$_POST['foto']);
+            $alumno = new Alumno($_POST['nombre'],$_POST['apellido'],$_POST['correo']);
             $alumno->CargarAlumno();
             break;
         case "cargarMateria":    
