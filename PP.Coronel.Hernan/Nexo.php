@@ -29,7 +29,7 @@ else
                 var_dump(consultarAlumno($_GET['apellido']));
                 break;
             case "inscribirAlumno":
-                Materias::Materias::inscribirAlumno($_POST['nombre'],$_POST['apellido'],$_POST['correo'],$_POST['materia'],$_POST['codigo']);
+                Materias::inscribirAlumno($_POST['nombre'],$_POST['apellido'],$_POST['correo'],$_POST['materia'],$_POST['codigo']);
                 break;
             case "inscripciones":
                 Materias::Inscripciones();
