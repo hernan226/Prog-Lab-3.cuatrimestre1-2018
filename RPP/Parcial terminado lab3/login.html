@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel='stylesheet' href='Estilo.css'>
+    <script src="funciones.js"></script>
+</head>
+
+<body>
+    <div class = "login">
+
+            <div class='loading'>
+                                    
+                    <img class = 'back' src="./images/back.jpg" id='fondo'>
+                    <img class = 'loaderSignIn' src="./images/loader.gif" id='spinner'>
+            </div>
+
+        <div class= 'loginInput'>
+            <h1 class= 'titulo'>Login para ingresar a las noticias</h1>
+            <img class= 'loginImg' src='./images/usr.png' width="150px" height="150px">
+            <div class= 'input'>
+                <caption >Email: </caption><br>
+                <input type="text" id="email"><br>
+            </div>
+            <div class='input'>
+                <caption >Contraseña: </caption>
+                <input type="password" id="pass"><br>
+            </div>
+        </div>
+        <div class = 'btnLogin'>
+                <input class="btn" type="submit" id="login" value="LOGIN" onclick="Login(email.value,pass.value)"><br>
+                <label id="err" class="error">Debe ingresar un email y un password valido</label>
+            </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NOTAS</title>
+    <link rel='stylesheet' href='Estilo.css'>
+    <script src='Funciones.js'></script>
+</head>
+<div class='tabla'>
+    <body onload="verificar();">
+        
+        <table >
+            
+            <thead id='tabla'></thead> 
+            <tbody id='cuerpo' >
+                    <div class='modificar' id='modificar'>
+                            <input class='btnCerrar' type="button" id='cerrar' value='X' onclick="modificar.style='display: none'">
+                            <input class='inputmod' type='text' id='legajo'>
+                            <input class='inputmod' type='text' id='nombre'>
+                            <input class='inputmod' type='text' id='materia'>
+                            <input class='inputmod' type='text' id='nota' >
+                            <input class='btnGuardar btn' type="button" id='guardar' value='GUARDAR' >
+                            <div class='loading'>
+                                    
+                                    <img class = 'back' src="./images/back.jpg" id='fondo'>
+                                    <img class = 'loader' src="./images/loader.gif" id='spinner'>
+                            </div>
+                        </div>
+            </tbody>
+            
+        </table>
+
+    </body>
+</div>
+</html>

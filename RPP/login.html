@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <title>Log me in</title>
+
+    <script src="Scripts/Scripts.js"></script>
+</head>
+
+<body>
+    <form method="POST">        
+    <div  class="container">
+        <header class="title"><h1>Login para ingresar noticias</h1></header>
+        <img class="img" src="./Imagenes/usuario.png">
+
+        </br>
+        </br>
+
+        <div class="section">
+            <label class="lblcentrar">EMail:</label>
+            </br>
+            <input class="txtboxcentrar" type="text" id="email">
+
+        </div>
+
+        </br>
+        </br>
+
+        <div class="section">
+            <label class="lblcentrar">Contraseña:</label>
+            </br>
+            <input class="txtboxcentrar" type="password" id="pass">
+
+        </div>
+
+        </br>
+        </br>
+
+        <div>
+            <input class="btncentrar" onclick="OnClickSend(email.value,pass.value)" type="button" value='Log In'>
+        </div>
+    </br>
+
+    </div>
+    </form>
+</body>
+
+</html>
