@@ -1,0 +1,4 @@
+generar html con bootstrap 4 con una grilla a la derecha
+a la izq 4 imputs (Legajo, nombre, materia, nota)
+ con dos botones abajo de todo ("ok"	"cancel")
+arriba de todo un id oculto
